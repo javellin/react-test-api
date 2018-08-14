@@ -23,6 +23,25 @@ public class Book {
     @Field("isFavorite")
     private boolean isFavorite;
 
+    @Field("image")
+    private String image;
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public boolean isFavorite() {
+        return isFavorite;
+    }
+
+    public void setFavorite(boolean favorite) {
+        isFavorite = favorite;
+    }
+
     public ObjectId getId() {
         return id;
     }
